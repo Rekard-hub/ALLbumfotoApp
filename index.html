@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album Foto</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <div class="album">
+        <button id="openAlbum">Rekard & Festin</button>
+    </div>
+
+    <div class="modal" id="photoModal">
+        <img id="modalImage" src="" alt="Foto">
+        <div id="textContainer" class="text-container">Farhan</div>
+        <div class="controls">
+            <button id="prevPhoto" title="Sebelumnya">
+                <span class="material-icons">navigate_before</span> 
+            </button>
+            <button id="toggleSlide" title="Hentikan/Lanjutkan Slide">
+                <span id="toggleIcon" class="material-icons">play_arrow</span>
+            </button>
+            <button id="nextPhoto" title="Berikutnya">
+                <span class="material-icons">navigate_next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Daun berjatuhan -->
+    <div id="fallingLeaves"></div>
+
+    <audio id="backgroundAudio" loop>
+        <source src="assets/audio/Andmesh Kamaleng - Cinta Luar Biasa (Official Music Video).mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <script src="script.js"></script>
+</body>
+</html>
